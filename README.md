@@ -1,59 +1,94 @@
-# Introduction to GitHub
+# Image to Text Generator
 
-<!-- ![](https://github.com/shxynh/skills-introduction-to-githhub/actions/workflows/0-start-exercise.yml/badge.svg) -->
-![](https://github.com/shxynh/skills-introduction-to-githhub/actions/workflows/1-create-a-branch.yml/badge.svg)
-![](https://github.com/shxynh/skills-introduction-to-githhub/actions/workflows/2-commit-a-file.yml/badge.svg)
-![](https://github.com/shxynh/skills-introduction-to-githhub/actions/workflows/3-open-a-pull-request.yml/badge.svg)
-![](https://github.com/shxynh/skills-introduction-to-githhub/actions/workflows/4-merge-your-pull-request.yml/badge.svg)
+A powerful web application that extracts text from images using advanced OCR (Optical Character Recognition) technology with GPU acceleration support.
 
-_Get started using GitHub in less than an hour._
+## 🌐 Live Demo
 
-## Welcome
+**[Try the App](https://your-app-link.com)** ← *Replace with your actual deployment URL*
 
-People use GitHub to build some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can help you do it even better. GitHub Skills’ “Introduction to GitHub” exercise guides you through everything you need to start contributing in less than an hour.
+## ✨ Features
 
-- **Who is this for**: New developers, new GitHub users, and students.
-- **What you'll learn**: We'll introduce repositories, branches, commits, and pull requests.
-- **What you'll build**: We'll make a short Markdown file you can use as your [profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
-- **Prerequisites**: None. This exercise is a great introduction for your first day on GitHub.
-- **How long**: This exercise takes less than one hour to complete.
+- **Multi-language OCR** - Supports English, Spanish, French, German, and Italian
+- **GPU Acceleration** - Automatic CUDA detection for faster processing
+- **Smart Text Processing** - AI-powered text summarization
+- **Image Optimization** - Automatic resizing and format handling
+- **Export Options** - Download extracted text as PDF
+- **Real-time Processing** - Fast and responsive interface
 
-In this exercise, you will:
+## 🛠️ Tech Stack
 
-1. Create a branch
-2. Commit a file
-3. Open a pull request
-4. Merge your pull request
+**Backend:**
+- FastAPI (Python web framework)
+- EasyOCR (OCR engine)
+- Transformers (AI text processing)
+- PyTorch (Machine learning)
+- Pillow (Image processing)
 
-### How to start this exercise
+**Frontend:**
+- React 19
+- Modern JavaScript
+- CSS3 styling
+- jsPDF (PDF generation)
 
-1. Right-click **Copy Exercise** and open the link in a new tab.
+## 📁 Project Structure
 
-   <a id="copy-exercise">
-      <img src="https://img.shields.io/badge/📠_Copy_Exercise-AAA" height="25pt"/>
-   </a>
+```
+├── backend/           # FastAPI server
+│   ├── backend.py     # Main server application
+│   └── requirement.txt# Python dependencies
+├── frontend/          # React application
+│   ├── src/           # Source code
+│   ├── public/        # Static assets
+│   └── package.json   # Node dependencies
+└── README.md         # Project documentation
+```
 
-2. In the new tab, most of the prompts will automatically fill in for you.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.chttps://github.com/shxynh/skills-introduction-to-githhub/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
+## 🚀 Quick Start
 
-3. After your new repository is created, wait about 20 seconds for the exercise to be prepared and buttons updated. You will continue working from your copy of the exercise.
-   - The **Copy Exercise** button will deactivate, changing to gray.
-   - The **Start Exercise** button will activate, changing to green.
-   - You will likely need to refresh the page.
+### Prerequisites
+- Python 3.8+
+- Node.js 14+
+- Optional: CUDA-compatible GPU for acceleration
 
-4. Click **Start Exercise**. Follow the step-by-step instructions and feedback will be provided as you progress.
+### Backend Setup
+```bash
+cd backend
+pip install -r requirement.txt
+python backend.py
+```
+The API will be available at `http://localhost:8000`
 
-   <a id="start-exercise" href="https://github.com/shahinakt/Image_to_text_generator/issues/1" href="https://github.com/shxynh/skills-introduction-to-githhub/issues/1">
-      <img src="https://img.shields.io/badge/🚀_Start_Exercise-008000" height="25pt"/>
-   </a>
+### Frontend Setup
+```bash
+cd frontend
+npm install
+npm start
+```
+The web app will open at `http://localhost:3000`
 
-> [!IMPORTANT]
-> The **Start Exercise** button will activate after copying the repository. You will probably need to refresh the page.
+## 📖 Usage
 
----
+1. **Upload Image**: Choose an image file (JPG, PNG, etc.)
+2. **Select Language**: Pick the primary language of text in the image
+3. **Extract Text**: Click process to extract text using OCR
+4. **Review Results**: View extracted text with optional AI summarization
+5. **Export**: Download results as PDF if needed
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-github) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+## 🔧 Configuration
 
-&copy; 2024 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+The application automatically:
+- Detects GPU availability for faster processing
+- Resizes large images (max 1600px dimension)
+- Limits file size (5MB max)
+- Handles multiple image formats
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
