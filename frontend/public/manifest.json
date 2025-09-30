@@ -1,0 +1,19 @@
+{
+  "short_name": "Image2Text",
+  "name": "Image to Text Generator - OCR Tool",
+  "description": "Extract text from images using advanced OCR technology with AI-powered summarization",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2563eb",
+  "background_color": "#eff6ff",
+  "categories": ["utilities", "productivity"],
+  "lang": "en",
+  "scope": "/"
+}

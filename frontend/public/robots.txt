@@ -1,0 +1,13 @@
+# Robots.txt for Image to Text Generator
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the site
+Disallow: /api/
+Disallow: /temp/
+Disallow: /*.json$
+
+# Sitemap location (add this when you create a sitemap)
+# Sitemap: https://yoursite.com/sitemap.xml
