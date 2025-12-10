@@ -35,3 +35,16 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Python #
+#########
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# Node/React #
+##############
+node_modules/
+frontend/build/
+frontend/.env

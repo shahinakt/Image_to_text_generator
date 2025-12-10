@@ -2,10 +2,6 @@
 
 A powerful web application that extracts text from images using advanced OCR (Optical Character Recognition) technology with GPU acceleration support.
 
-## 🌐 Live Demo
-
-**[Try the App](https://your-app-link.com)** ← *Replace with your actual deployment URL*
-
 ## ✨ Features
 
 - **Multi-language OCR** - Supports English, Spanish, French, German, and Italian
